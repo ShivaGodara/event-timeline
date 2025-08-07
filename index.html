@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Event Timeline</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem;
+      background: #f5f5f5;
+      border-bottom: 1px solid #ccc;
+    }
+    #logo {
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+    #theme-toggle {
+      cursor: pointer;
+    }
+    nav {
+      padding: 1rem;
+      background: #fafafa;
+      border-bottom: 1px solid #eee;
+    }
+    #timeline {
+      padding: 2rem;
+    }
+    #modal {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div id="logo">MyTimeline</div>
+    <button id="theme-toggle">Toggle Theme</button>
+  </header>
+
+  <nav>
+    <!-- Filters or placeholder here -->
+  </nav>
+
+  <main>
+    <section id="timeline">
+        <!-- event markers here -->
+    </section>
+  </main>
+
+  <div id="modal">
+    <!-- Modal popup content here -->
+  </div>
+
+</body>
+</html>
