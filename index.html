@@ -4,56 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Event Timeline</title>
-
-  <!-- Link to external CSS file (can be expanded later) -->
-  <link rel="stylesheet" href="styles.css">
-
-  <style>
-    body {
-      font-family: sans-serif;
-      margin: 0;
-      padding: 0;
-    }
-
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 1rem 2rem;
-      background-color: #f5f5f5;
-      border-bottom: 1px solid #ddd;
-    }
-
-    #logo {
-      font-size: 1.5rem;
-      font-weight: bold;
-    }
-
-    #theme-toggle {
-      padding: 0.5rem 1rem;
-      cursor: pointer;
-    }
-
-    nav {
-      padding: 1rem 2rem;
-      background-color: #fafafa;
-      border-bottom: 1px solid #eee;
-    }
-
-    main {
-      padding: 2rem;
-    }
-
-    #timeline {
-      display: flex;
-      flex-direction: column;
-      gap: 2rem;
-    }
-
-    #modal {
-      display: none;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -65,29 +16,49 @@
 
   <!-- Placeholder for future filters or controls -->
   <nav>
-    <!-- Filters/search can go here later -->
+    <input type="text" placeholder="Search events..." />
   </nav>
 
   <!-- Main area where events will be shown -->
   <main>
     <section id="timeline">
-      <!-- Timeline events will be injected here dynamically -->
-      <!-- Sample structure for future: -->
-       <article>
-          <time datetime="2025-08-07">Aug 7, 2025</time>
-          <h2>Some Event</h2>
-          <p>Description about the event goes here.</p>
-        </article>
+      <article>
+        <time datetime="2025-01-01">Jan 1, 2025</time>
+        <h2>New Year Kickoff</h2>
+        <p>Celebrated the new year with fireworks and friends.</p>
+      </article>
+      <article>
+        <time datetime="2025-02-14">Feb 14, 2025</time>
+        <h2>Valentine’s Day</h2>
+        <p>Spent the day with loved ones and exchanged gifts.</p>
+      </article>
+      <article>
+        <time datetime="2025-03-10">Mar 10, 2025</time>
+        <h2>Project Launch</h2>
+        <p>Released version 1.0 of the new product after months of work.</p>
+      </article>
+      <article>
+        <time datetime="2025-04-22">Apr 22, 2025</time>
+        <h2>Earth Day</h2>
+        <p>Organized a community clean-up and tree planting drive.</p>
+      </article>
     </section>
   </main>
 
   <!-- Hidden modal popup (used for event details etc.) -->
   <div id="modal">
-    <!-- Will be filled in later using JavaScript -->
+    <div class="modal-content">
+      <h2>Modal Title</h2>
+      <p>This is a placeholder for modal content.</p>
+    </div>
   </div>
 
-  <!-- JS can go here later -->
-  <!-- <script src="app.js"></script> -->
-
+  <script>
+    // Theme toggle script
+    const themeBtn = document.getElementById('theme-toggle');
+    themeBtn.addEventListener('click', () => {
+      document.body.classList.toggle('dark-theme');
+    });
+  </script>
 </body>
 </html>
